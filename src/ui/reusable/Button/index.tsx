@@ -16,7 +16,7 @@ export const Button = ({
   return (
     <button
       {...props}
-      className={`${variantCn} p-4 cursor-pointer rounded-sm ${
+      className={`${variantCn} p-4 cursor-pointer rounded-sm shadow-lg ${
         disabled ? "opacity-50 cursor-default pointer-none:" : ""
       } p-${padding} ${props.className}`}
       onClick={!disabled ? props.onClick : undefined}

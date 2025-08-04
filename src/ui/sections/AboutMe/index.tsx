@@ -8,7 +8,7 @@ export const AboutMe = () => {
       <div className="flex flex-col md:flex-row gap-8">
         <div
           className={
-            "relative rounded-xl overflow-hidden h-[calc(50vh-(48px))] md:h-100% md:w-[calc(50%-(16px))]"
+            "relative shadow-lg md:flex-1 rounded-xl overflow-hidden h-[calc(50vh-(48px))] md:h-100% md:w-[calc(50%-(16px))]"
           }
         >
           <Image
@@ -19,11 +19,16 @@ export const AboutMe = () => {
             objectFit={"cover"}
           />
         </div>
-        <div className={"flex flex-col gap-4 md:gap-8 flex-1"}>
-          <Box>
+        <div className={"flex flex-col gap-4 md:gap-8 md:flex-2"}>
+          <Box contentClassName={"flex flex-col gap-4 md:text-2xl"}>
             <p>
               {
-                "With a foundation in cultural anthropology and UX research, I transitioned from design into full‑stack engineering at one of Poland’s top ticketing and event marketing firms. Over six years I’ve worn many hats—from CMS management and QA to UX/UI design and full‑stack development—ultimately specializing in TypeScript, Next.js, and React to deliver scalable, user‑centric applications."
+                "With a foundation in cultural anthropology and UX research, I transitioned from design into full‑stack engineering at one of Poland’s top ticketing and event marketing firms."
+              }
+            </p>
+            <p>
+              {
+                "Over six years I’ve worn many hats—from CMS management and QA to UX/UI design and full‑stack development—ultimately specializing in TypeScript, Next.js, and React to deliver scalable, user‑centric applications."
               }
             </p>
           </Box>
