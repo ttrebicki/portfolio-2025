@@ -1,10 +1,12 @@
-import { Navbar } from "@/ui/layout/Navbar";
-import { Footer } from "@/ui/layout/Footer";
+import { Section } from "@/ui/reusable/Section";
+import { HeroBanner } from "@/ui/sections/HeroBanner";
 
 export default function Home() {
   return (
-    <div className="font-sans min-h-screen p-8">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start bg-background"></main>
+    <div className="font-sans min-h-screen">
+      <Section className={"pt-16"}>
+        <HeroBanner />
+      </Section>
     </div>
   );
 }
