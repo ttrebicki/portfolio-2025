@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #62fdbc;
+  --foreground: #ffffff;
+  --primary-main: #004d40;
+  --secondary-main: #00695c;
+  --text: #333333;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #004d40;
+    --foreground: #002f2b;
+    --primary-main: #62fdbc;
+    --secondary-main: #26a69a;
+    --text: #e0e0e0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-text: var(--text);
+  --color-bordercolor: var(--text);
+  --color-primary-main: var(--primary-main);
+  --color-secondary-main: var(--secondary-main);
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  color: var(--text);
+  font-family: var(--font-geist-mono);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+h5 {
+  font-size: var(--text-base);
+}
+
+h6 {
+  font-size: var(--text-base);
+}
+
+@media screen and (min-width: theme("screens.lg")) {
+  h1 {
+    font-size: var(--text-8xl);
+  }
+
+  h2 {
+    font-size: var(--text-5xl);
+  }
+
+  h3 {
+    font-size: var(--text-4xl);
+  }
+
+  h4 {
+    font-size: var(--text-3xl);
+  }
+
+  h5 {
+    font-size: var(--text-2xl);
+  }
+
+  h6 {
+    font-size: var(--text-xl);
+  }
+}
+
+a:hover {
+  text-decoration: underline;
 }

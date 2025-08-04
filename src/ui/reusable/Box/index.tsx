@@ -10,7 +10,7 @@ export const Box = ({
 }: IBoxProps) => {
   return (
     <div
-      className={`flex flex-1 flex-${direction} border-1 border-text rounded-xl relative overflow-hidden ${
+      className={`flex flex-1 flex-${direction} bg-foreground rounded-xl relative overflow-hidden ${
         isHover ? "hover:opacity-80" : ""
       } ${direction === "row" ? "justify-center items-center" : ""} ${
         "h-full " + (className || "") || "h-full"

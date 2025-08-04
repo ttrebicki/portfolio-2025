@@ -1,18 +1,28 @@
-import "./globals.css";
-import { geistMono, geistSans } from "../lib/constants/fonts";
-export { metadata } from "../lib/constants/seo";
+import { PropsWithChildren } from "react";
+import { Navbar } from "@/ui/layout/Navbar";
+import { Footer } from "@/ui/layout/Footer";
+export { metadata } from "@/lib/constants/seo";
+import { layoutConstraintsCn } from "@/lib/constants/ui";
 
-export default function RootLayout({
+import "./globals.css";
+import React from "react";
+import { Toaster } from "react-hot-toast";
+import { geistMono, geistSans } from "@/lib/constants/fonts";
+
+export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<PropsWithChildren>) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between bg-background`}
       >
-        {children}
+        <Navbar />
+        <main className={`${layoutConstraintsCn} pt-4 pb-4 bg-transparent`}>
+          {children}
+        </main>
+        <Footer />
+        <Toaster position="bottom-left" />
       </body>
     </html>
   );
