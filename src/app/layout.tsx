@@ -18,9 +18,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between bg-background`}
       >
         <Navbar />
-        <main className={`${layoutConstraintsCn} pt-4 pb-4 bg-transparent`}>
-          {children}
-        </main>
+        <main className={`${layoutConstraintsCn}`}>{children}</main>
         <Footer />
         <Toaster position="bottom-left" />
       </body>

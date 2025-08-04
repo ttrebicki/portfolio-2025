@@ -6,22 +6,25 @@
   --primary-main: #004d40;
   --secondary-main: #00695c;
   --text: #333333;
+  --button-text: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #004d40;
     --foreground: #002f2b;
     --primary-main: #62fdbc;
     --secondary-main: #26a69a;
     --text: #e0e0e0;
+    --button-text: #002f2b;
   }
-}
+} */
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-text: var(--text);
+  --color-button-text: var(--button-text);
   --color-bordercolor: var(--text);
   --color-primary-main: var(--primary-main);
   --color-secondary-main: var(--secondary-main);
@@ -32,20 +35,24 @@ html {
 }
 
 * {
-  color: var(--text);
   font-family: var(--font-geist-mono);
 }
 
+body {
+  color: var(--text);
+}
+
 h1 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-3xl);
 }
 
 h2 {
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
 }
 
 h3 {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
+  font-weight: bold;
 }
 
 h4 {
@@ -54,6 +61,7 @@ h4 {
 
 h5 {
   font-size: var(--text-base);
+  font-weight: bold;
 }
 
 h6 {
@@ -62,27 +70,27 @@ h6 {
 
 @media screen and (min-width: theme("screens.lg")) {
   h1 {
-    font-size: var(--text-8xl);
+    font-size: var(--text-7xl);
   }
 
   h2 {
-    font-size: var(--text-5xl);
-  }
-
-  h3 {
     font-size: var(--text-4xl);
   }
 
-  h4 {
+  h3 {
     font-size: var(--text-3xl);
   }
 
-  h5 {
+  h4 {
     font-size: var(--text-2xl);
   }
 
-  h6 {
+  h5 {
     font-size: var(--text-xl);
+  }
+
+  h6 {
+    font-size: var(--text-lg);
   }
 }
 
