@@ -5,10 +5,10 @@ import { HeroBanner } from "@/ui/sections/HeroBanner";
 export default function Home() {
   return (
     <div className="font-sans min-h-screen">
-      <Section>
+      <Section className={"h-screen"}>
         <HeroBanner />
       </Section>
-      <Section>
+      <Section className={"md:h-screen"}>
         <AboutMe />
       </Section>
     </div>
