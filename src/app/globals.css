@@ -9,7 +9,7 @@
   --button-text: #ffffff;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #004d40;
     --foreground: #002f2b;
@@ -18,7 +18,7 @@
     --text: #e0e0e0;
     --button-text: #002f2b;
   }
-} */
+}
 
 @theme {
   --color-background: var(--background);

@@ -10,7 +10,7 @@ export const Button = ({
     variant === "contained"
       ? "bg-primary-main hover:bg-secondary-main text-button-text"
       : `border border-primary-main ${
-          disabled ? "" : "hover:bg-secondary-main"
+          disabled ? "" : "hover:bg-secondary-main hover:text-button-text"
         }`;
 
   return (
