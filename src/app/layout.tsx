@@ -3,11 +3,11 @@ import { Navbar } from "@/ui/layout/Navbar";
 import { Footer } from "@/ui/layout/Footer";
 export { metadata } from "@/lib/constants/seo";
 import { layoutConstraintsCn } from "@/lib/constants/ui";
-
-import "./globals.css";
 import React from "react";
 import { Toaster } from "react-hot-toast";
 import { geistMono, geistSans } from "@/lib/constants/fonts";
+
+import "./globals.css";
 
 export default async function RootLayout({
   children,
@@ -15,7 +15,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between bg-background max-w-[1440px] mx-auto relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between bg-background max-w-[1200px] mx-auto relative`}
       >
         <Navbar />
         <main className={`${layoutConstraintsCn}`}>{children}</main>

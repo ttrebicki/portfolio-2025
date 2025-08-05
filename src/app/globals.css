@@ -9,7 +9,7 @@
   --button-text: #ffffff;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #004d40;
     --foreground: #002f2b;
@@ -18,7 +18,7 @@
     --text: #e0e0e0;
     --button-text: #002f2b;
   }
-} */
+}
 
 @theme {
   --color-background: var(--background);
@@ -68,7 +68,7 @@ h6 {
   font-size: var(--text-base);
 }
 
-@media screen and (min-width: theme("screens.lg")) {
+@media screen and (min-width: theme("screens.md")) {
   h1 {
     font-size: var(--text-7xl);
   }
@@ -91,6 +91,10 @@ h6 {
 
   h6 {
     font-size: var(--text-lg);
+  }
+
+  p {
+    font-size: var(--text-2xl);
   }
 }
 

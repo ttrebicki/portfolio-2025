@@ -1,9 +1,10 @@
 import { layoutConstraintsCn } from "@/lib/constants/ui";
+import Link from "next/link";
 
 export const Footer = () => (
-  <footer className={"flex border-t-1 border-bordercolor p-4"}>
+  <footer className={"flex p-4"}>
     <div className={layoutConstraintsCn}>
-      Copyright © 2025 Tomasz Trębicki All Rights Reserved.
+      <Link href="mailto:t.trebicki1103@gmail.com">Contact me</Link>
     </div>
   </footer>
 );
