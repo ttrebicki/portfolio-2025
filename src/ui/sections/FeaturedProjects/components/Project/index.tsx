@@ -8,7 +8,6 @@ export const Project = ({
   image,
   codeUrl,
   url,
-  inverted,
 }: IProjectProps) => {
   return (
     <div className="flex flex-col gap-4">
@@ -22,8 +21,10 @@ export const Project = ({
           <Image fill src={image} alt={name} objectFit={"contain"} />
         </div>
         <div className={"flex flex-col gap-4 flex-1 lg:flex-2"}>
-          {description.map((p) => (
-            <p className="flex">{p}</p>
+          {description.map((p, index) => (
+            <p key={p.substring(0, 10) + "-" + index} className="flex">
+              {p}
+            </p>
           ))}
         </div>
       </div>
