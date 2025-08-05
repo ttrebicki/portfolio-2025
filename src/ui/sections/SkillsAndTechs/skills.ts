@@ -82,6 +82,11 @@ export const frontend: IListItem[] = [
     skillLevel: 6,
   },
   {
+    name: "Zustand",
+    description: "Persistent state library",
+    skillLevel: 6,
+  },
+  {
     name: "React Hook Form",
     description: "Hooks-based forms library",
     skillLevel: 8,
@@ -134,6 +139,11 @@ export const backend: IListItem[] = [
     description: "Headless CMS",
     skillLevel: 8,
   },
+  {
+    name: "Braze",
+    description: "Customer engagement platform",
+    skillLevel: 5,
+  },
 ];
 
 export const devops: IListItem[] = [
@@ -181,7 +191,7 @@ export const testing: IListItem[] = [
   {
     name: "Maestro",
     description: "Cross-platform UI testing",
-    skillLevel: 6,
+    skillLevel: 4,
   },
 ];
 
@@ -194,7 +204,7 @@ export const design: IListItem[] = [
   {
     name: "Adobe XD",
     description: "UI/UX prototyping",
-    skillLevel: 8,
+    skillLevel: 6,
   },
   {
     name: "Sketch",

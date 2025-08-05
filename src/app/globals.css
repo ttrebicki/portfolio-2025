@@ -32,6 +32,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -44,6 +45,7 @@ body {
 
 h1 {
   font-size: var(--text-3xl);
+  font-weight: bold;
 }
 
 h2 {
@@ -70,7 +72,8 @@ h6 {
 
 @media screen and (min-width: theme("screens.md")) {
   h1 {
-    font-size: var(--text-7xl);
+    font-size: var(--text-5xl);
+    font-weight: bold;
   }
 
   h2 {
@@ -94,7 +97,7 @@ h6 {
   }
 
   p {
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
   }
 }
 
