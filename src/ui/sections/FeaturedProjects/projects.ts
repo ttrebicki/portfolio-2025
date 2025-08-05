@@ -15,7 +15,7 @@ export const projects: Record<string, IProjectProps> = {
   simpleEcommerce: {
     name: "simple-ecommerce",
     description: [
-      "Simple-Ecommerce is a self-designed Next.js project — a fully customizable e-commerce template that can be bootstrapped in minutes. It integrates seamlessly with Stripe to manage product catalogs and payments, while a simple login system built on Firebase Auth stores user sessions server-side (with additional logged-in features in progress).",
+      "simple-ecommerce is a self-designed Next.js full-stack project — a fully customizable e-commerce template that can be bootstrapped in minutes. It integrates seamlessly with Stripe to manage product catalogs and payments, while a simple login system built on Firebase Auth stores user sessions server-side (with additional logged-in features in progress).",
       "The app leverages SSR for blazing-fast initial loads, and its Tailwind CSS–based theme ensures a clean, responsive UI out of the box. Shopping cart state persists across sessions thanks to Zustand, delivering a smooth, frictionless experience.",
       "Meticulous performance tuning yields perfect Web Vitals scores (around 100 on both web and mobile), translating to top-tier SEO. Its minimal, modular codebase makes it easily maintainable and instantly pluggable into any Stripe account for rapid deployment.",
     ],

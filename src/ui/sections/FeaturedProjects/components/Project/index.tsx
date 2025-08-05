@@ -13,13 +13,15 @@ export const Project = ({
   return (
     <div className="flex flex-col gap-4">
       <h3>{name}</h3>
-      <div className={`flex flex-col md:flex-row gap-8 md:gap-32`}>
+      <div className={`flex flex-col lg:flex-row gap-8 lg:gap-32`}>
         <div
-          className={"relative items-center justify-center md:flex md:flex-1"}
+          className={
+            "min-h-[300px] lg:min-h-auto relative items-center justify-center lg:flex lg:flex-1"
+          }
         >
           <Image fill src={image} alt={name} objectFit={"contain"} />
         </div>
-        <div className={"flex flex-col gap-4 flex-1 md:flex-2"}>
+        <div className={"flex flex-col gap-4 flex-1 lg:flex-2"}>
           {description.map((p) => (
             <p className="flex">{p}</p>
           ))}

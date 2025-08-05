@@ -31,7 +31,7 @@ export const Box = ({
             ? "flex-row basis-5/6 justify-center items-center"
             : "flex-col basis-2/5"
         }
-         p-4 md:p-8 ${contentClassName || ""}`}
+         p-4 lg:p-8 ${contentClassName || ""}`}
       >
         {children}
       </div>

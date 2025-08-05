@@ -10,7 +10,7 @@ export default function Home() {
       <Section className={"h-screen"}>
         <HeroBanner />
       </Section>
-      <Section className={"md:h-screen"}>
+      <Section className={"lg:h-screen"}>
         <AboutMe />
       </Section>
       <Section>

@@ -30,7 +30,7 @@ export const ListElement = ({ item }: IListElementProps) => {
             </span>
             <span className={"text-xs block"}>{description}</span>
           </div>
-          <ProgressBar skillLevel={skillLevel} />
+          {skillLevel && <ProgressBar skillLevel={skillLevel} />}
         </div>
       </Box>
     </li>

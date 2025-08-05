@@ -1,14 +1,16 @@
 import { Box } from "@/ui/reusable/Box";
+import { List } from "@/ui/reusable/List";
 import Image from "next/image";
+import { values } from "./values";
 
 export const AboutMe = () => {
   return (
     <div className={"flex flex-col gap-8 min-h-full"}>
       <h2>About me</h2>
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row gap-8">
         <div
           className={
-            "relative shadow-lg md:flex-1 rounded-xl overflow-hidden h-[calc(50vh-(48px))] md:h-100% md:w-[calc(50%-(16px))]"
+            "relative shadow-lg lg:flex-1 rounded-xl overflow-hidden h-[calc(50vh-(48px))] lg:h-100% lg:w-[calc(50%-(16px))]"
           }
         >
           <Image
@@ -19,7 +21,7 @@ export const AboutMe = () => {
             objectFit={"cover"}
           />
         </div>
-        <div className={"flex flex-col gap-4 md:gap-8 md:flex-2"}>
+        <div className={"flex flex-col gap-4 lg:gap-8 lg:flex-2"}>
           <Box contentClassName={"flex flex-col gap-4"}>
             <p>
               With a foundation in cultural anthropology and UX research, I
@@ -35,26 +37,9 @@ export const AboutMe = () => {
           </Box>
         </div>
       </div>
-      <ul className={"flex flex-col gap-1 md:gap-4 text-base"}>
-        <li>
-          <p>
-            <strong>User‑First Thinking</strong>: I ground every feature in real
-            human needs.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Clean, Maintainable Code</strong>: I adhere to best
-            practices and SOLID principles.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Continuous Improvement</strong>: I never stop learning new
-            tools and techniques.
-          </p>
-        </li>
-      </ul>
+      <div>
+        <List items={values} name={"Core values"} lgCols={3} />
+      </div>
     </div>
   );
 };
