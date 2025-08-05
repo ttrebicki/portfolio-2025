@@ -1,4 +1,5 @@
 import { Button } from "@/ui/reusable/Button";
+import Link from "next/link";
 
 export const HeroBanner = () => {
   return (
@@ -9,10 +10,12 @@ export const HeroBanner = () => {
           I’m a Next.js & React developer with years of experience at a leading
           ticketing and e‑commerce platform.
         </h2>
-        <h3>Let’s build fast, maintainable apps that delight users. 🙂‍↕️</h3>
+        <h3>Let’s build fast, maintainable apps that delight users.</h3>
       </div>
       <div className={"flex gap-4"}>
-        <Button className="w-fit">Explore my work</Button>
+        <Link href={"#projects"}>
+          <Button className="w-fit">Explore my work</Button>
+        </Link>
         <Button variant={"outlined"} className={"w-fit"}>
           Download resume
         </Button>

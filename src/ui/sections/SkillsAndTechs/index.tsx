@@ -11,9 +11,9 @@ export const SkillsAndTechs = () => {
         development, enabling me to drive end-to-end solutions throughout the
         entire software lifecycle.
       </p>
-      <List items={frontend} name={"Front end"} />
-      <List items={backend} name={"Back end"} />
-      <List items={devops} name={"Dev ops"} />
+      <List items={frontend} name={"Front-end"} />
+      <List items={backend} name={"Back-end"} />
+      <List items={devops} name={"Dev-ops"} />
       <List items={design} name={"UX/UI Design"} />
       <List items={projectManagement} name={"Project management"} />
     </div>
