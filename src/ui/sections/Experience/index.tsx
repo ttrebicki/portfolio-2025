@@ -28,7 +28,7 @@ const experience: IListItem[] = [
   },
 ];
 
-const education: IListItem[] = [
+const certifications: IListItem[] = [
   {
     name: "2019: JavaScript Algorithms and Data Structures",
     description: "freeCodeCamp.org",
@@ -37,6 +37,9 @@ const education: IListItem[] = [
     name: "2019: Responsive Web Design",
     description: "freeCodeCamp.org",
   },
+];
+
+const education: IListItem[] = [
   {
     description: "University of Warsaw",
     name: "2014 - 2017: Bachelor in Ethnology and Cultural Anthropology",
@@ -48,6 +51,7 @@ export const Experience = () => {
     <div className={"flex flex-col gap-8 min-h-full"}>
       <h2>Experience and education</h2>
       <List name={"Experience"} items={experience} lgCols={1} />
+      <List name={"Certifications"} items={certifications} lgCols={1} />
       <List name={"Education"} items={education} lgCols={1} />
     </div>
   );
