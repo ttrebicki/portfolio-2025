@@ -34,4 +34,13 @@ export const projects: Record<string, IProjectProps> = {
     url: "https://simple-ecommerce-rho-nine.vercel.app/",
     codeUrl: "https://github.com/ttrebicki/simple-ecommerce",
   },
+  artificialNewsAnchor: {
+    name: "Artificial News Anchor",
+    description: [
+      "In 2018, as part of the radicalzz.studio team — a boutique consultancy focusing on UX/UI, prototyping, sustainable tech, and cultural trends—I was tasked with crafting a way of presentation for a Instagram news content plan. Leveraging CrazyTalk, I created a CGI ‘News Anchor’ character that presented daily updates on ecology, sustainability, and future technologies in a memorable, human-like style.",
+      "Each campaign installment was delivered as a set of four Instagram Stories: the first story featured a short video of the anchor introducing the news, each followed by a slides of extended text. I designed the character in thematic consistency with other provided engaging visuals.",
+      "Running for over a year, this state-of-the-art campaign hugely impacted radicalzz.studio’s brand recognition and Instagram following.",
+    ],
+    image: "/anchor.gif",
+  },
 };
