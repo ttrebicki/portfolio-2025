@@ -4,8 +4,9 @@ import Link from "next/link";
 export const Footer = () => (
   <footer className={"flex py-16"}>
     <div className={layoutConstraintsCn}>
-      <Link target={"_blank"} href="mailto:t.trebicki1103@gmail.com">
-        Contact me
+      © 2025 Tomasz Trębicki 
+      <Link href="/Trebicki_Tomasz_CV.pdf" download>
+        Download Resume
       </Link>
     </div>
   </footer>
