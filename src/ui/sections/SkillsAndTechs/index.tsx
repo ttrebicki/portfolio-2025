@@ -1,5 +1,12 @@
 import { List } from "@/ui/reusable/List";
-import { backend, frontend, devops, design, projectManagement } from "./skills";
+import {
+  backend,
+  frontend,
+  devops,
+  design,
+  projectManagement,
+  testing,
+} from "./skills";
 
 export const SkillsAndTechs = () => {
   return (
@@ -13,9 +20,10 @@ export const SkillsAndTechs = () => {
       </p>
       <List items={frontend} name={"Front-end"} />
       <List items={backend} name={"Back-end"} />
-      <List items={devops} name={"Dev-ops"} />
+      <List items={testing} name={"QA"} />
       <List items={design} name={"UX/UI Design"} />
       <List items={projectManagement} name={"Project management"} />
+      <List items={devops} name={"Dev-ops"} />
     </div>
   );
 };

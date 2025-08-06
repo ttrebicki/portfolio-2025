@@ -1,6 +1,6 @@
 export interface IListProps {
   items: IListItem[];
-  name: string;
+  name?: string;
   lgCols?: number;
 }
 
