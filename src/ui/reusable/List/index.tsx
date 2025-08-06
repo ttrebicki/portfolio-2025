@@ -22,7 +22,7 @@ export const List = ({ items, name, lgCols = 6 }: IListProps) => {
 
   return (
     <div className={"flex flex-col gap-4"}>
-      <h3>{name}</h3>
+      {!!name?.length && <h3>{name}</h3>}
       <ul className={gridClasses}>
         {items.map((item, index) => (
           <ListElement key={`product-${item.name}-${index}`} item={item} />

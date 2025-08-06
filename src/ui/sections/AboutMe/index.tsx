@@ -7,7 +7,7 @@ export const AboutMe = () => {
   return (
     <div className={"flex flex-col gap-8 min-h-full"}>
       <h2>About me</h2>
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row gap-4">
         <div
           className={
             "relative shadow-lg lg:flex-1 rounded-xl overflow-hidden h-[calc(50vh-(48px))] lg:h-100% lg:w-[calc(50%-(16px))]"

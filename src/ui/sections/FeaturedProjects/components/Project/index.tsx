@@ -10,7 +10,7 @@ export const Project = ({
   url,
 }: IProjectProps) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-16">
       <h3>{name}</h3>
       <div className={`flex flex-col lg:flex-row gap-8 lg:gap-32`}>
         <div
@@ -28,9 +28,11 @@ export const Project = ({
           ))}
         </div>
       </div>
-      <h4>Links:</h4>
-      <Link href={url}>Website</Link>
-      {!!codeUrl?.length && <Link href={codeUrl}>Code</Link>}
+      <div className="flex flex-col gap-4">
+        <h4>Links:</h4>
+        {!!url?.length && <Link href={url}>Website</Link>}
+        {!!codeUrl?.length && <Link href={codeUrl}>Code</Link>}
+      </div>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { AboutMe } from "@/ui/sections/AboutMe";
 import { FeaturedProjects } from "@/ui/sections/FeaturedProjects";
 import { HeroBanner } from "@/ui/sections/HeroBanner";
 import { SkillsAndTechs } from "@/ui/sections/SkillsAndTechs";
+import { Experience } from "@/ui/sections/Experience";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
       </Section>
       <Section>
         <FeaturedProjects />
+      </Section>
+      <Section>
+        <Experience />
       </Section>
     </div>
   );
