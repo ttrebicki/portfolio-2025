@@ -9,7 +9,6 @@ export const ListElement = ({ item }: IListElementProps) => {
   return (
     <li className={"flex flex-col relative"}>
       <Box
-        isHover
         imageSlot={
           !!imageUrl?.length && (
             <div className="relative w-[100%]">
