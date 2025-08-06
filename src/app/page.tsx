@@ -4,6 +4,7 @@ import { FeaturedProjects } from "@/ui/sections/FeaturedProjects";
 import { HeroBanner } from "@/ui/sections/HeroBanner";
 import { SkillsAndTechs } from "@/ui/sections/SkillsAndTechs";
 import { Experience } from "@/ui/sections/Experience";
+import { Contact } from "@/ui/sections/Contact";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       </Section>
       <Section>
         <Experience />
+      </Section>
+      <Section>
+        <Contact />
       </Section>
     </div>
   );
