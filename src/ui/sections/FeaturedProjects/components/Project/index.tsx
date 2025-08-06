@@ -37,8 +37,16 @@ export const Project = ({
       {(!!url?.length || !!codeUrl?.length) && (
         <div className="flex flex-col gap-4">
           <h4>Links:</h4>
-          {!!url?.length && <Link href={url}>Website</Link>}
-          {!!codeUrl?.length && <Link href={codeUrl}>Code</Link>}
+          {!!url?.length && (
+            <Link target={"_blank"} href={url}>
+              Website
+            </Link>
+          )}
+          {!!codeUrl?.length && (
+            <Link target={"_blank"} href={codeUrl}>
+              Code
+            </Link>
+          )}
         </div>
       )}
     </div>

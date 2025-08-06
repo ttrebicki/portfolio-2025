@@ -24,7 +24,7 @@ export default function Home() {
       <Section>
         <Experience />
       </Section>
-      <Section className={"h-screen"}>
+      <Section>
         <Contact />
       </Section>
     </div>

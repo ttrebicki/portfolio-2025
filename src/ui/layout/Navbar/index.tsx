@@ -7,7 +7,9 @@ export const Navbar = () => {
       className={`${layoutConstraintsCn} flex flex-1 p-4 fixed top-0 z-10 justify-between items-center min-w-full`}
     >
       <div className="container min-w-full">
-        <Link href="#">{"portfolio: tomasz trębicki"}</Link>
+        <Link target={"_blank"} href="#">
+          {"portfolio: tomasz trębicki"}
+        </Link>
       </div>
     </nav>
   );
