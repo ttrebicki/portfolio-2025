@@ -3,11 +3,7 @@ import { IListItem } from "@/ui/reusable/List/types";
 
 const experience: IListItem[] = [
   {
-    name: "2022 - 2025: Full-stack developer",
-    description: "Going / Empik Bilety",
-  },
-  {
-    name: "2021 - 2022: Front-end developer",
+    name: "2021 - 2025: Full-stack developer",
     description: "Going / Empik Bilety",
   },
   {

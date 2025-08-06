@@ -2,8 +2,7 @@ import { CopyToClipboard } from "@/ui/reusable/CopyToClipboard";
 import Link from "next/link";
 
 export const Contact = () => {
-  const linkedIn =
-    "https://www.linkedin.com/in/tomasz-tr%C4%99bicki-5bb699201/";
+  const linkedIn = "https://www.linkedin.com/in/ttrebicki";
   const github = "https://github.com/ttrebicki/";
   const mail = "t.trebicki1103@gmail.com";
   const phone = "+48519767459";

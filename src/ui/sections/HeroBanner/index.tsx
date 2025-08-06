@@ -13,12 +13,14 @@ export const HeroBanner = () => {
         <h3>Let’s build fast, maintainable apps that delight users.</h3>
       </div>
       <div className={"flex gap-4"}>
-        <Link target={"_blank"} href={"#projects"}>
+        <Link href={"#projects"}>
           <Button className="w-fit">Explore my work</Button>
         </Link>
-        <Button variant={"outlined"} className={"w-fit"}>
-          Download resume
-        </Button>
+        <Link href="/Trebicki_Tomasz_CV.pdf" download>
+          <Button variant={"outlined"} className={"w-fit"}>
+            Download resume
+          </Button>
+        </Link>
       </div>
     </div>
   );
