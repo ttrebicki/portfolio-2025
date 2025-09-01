@@ -6,6 +6,7 @@ import { layoutConstraintsCn } from "@/lib/constants/ui";
 import React from "react";
 import { Toaster } from "react-hot-toast";
 import { geistMono, geistSans } from "@/lib/constants/fonts";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 
@@ -17,6 +18,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between bg-background max-w-[1200px] mx-auto relative`}
       >
+        <Analytics />
         <Navbar />
         <main className={`${layoutConstraintsCn}`}>{children}</main>
         <Footer />
